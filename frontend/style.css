@@ -32,8 +32,11 @@ body {
   font-size: 16px;
   width: 480px;
   height: 64px;
+  max-width: 480px;
+  max-height: 64px;
   border: none;
-  color: #467745;
+  margin-bottom: 28px;
+  margin-top: 15px;
 }
 #root .megjegyzes {
   font-family: "Montserrat", sans-serif;
@@ -41,37 +44,94 @@ body {
   font-size: 16px;
   width: 480px;
   height: 120px;
+  max-width: 480px;
+  max-height: 120px;
   border: none;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+#root ::-moz-placeholder {
   color: #467745;
+  opacity: 0.7;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#root :-ms-input-placeholder {
+  color: #467745;
+  opacity: 0.7;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#root ::placeholder {
+  color: #467745;
+  opacity: 0.7;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 #root .check {
   display: flex;
   flex-direction: row;
 }
 #root .check .check-box {
-  background-color: white;
-  border: none;
+  height: 17px;
+  width: 17px;
 }
 #root .check .checkbox-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #467745;
+  margin-left: 15px;
+}
+#root .check .checkbox-text p {
+  display: inline;
 }
 #root .save-button {
   font-family: "EB Garamond", serif;
   font-weight: normal;
   font-size: 21px;
+  text-transform: uppercase;
   width: 280px;
   height: 80px;
   background-color: #467745;
   color: #f7e4d4;
   letter-spacing: 0.2em;
+  border-radius: 35px 35px 35px 35px;
+  border: none;
+  margin-top: 35px;
 }
 
 @media all and (max-width: 519px) {
-  .cim {
+  #root .cim {
     font-size: 36px;
     align-self: flex-start;
+  }
+  #root .targy {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #root .megjegyzes {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #root .check {
+    margin-left: 20px;
+  }
+  #root .check .checkbox-text p {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,15 +1,83 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #f7e4d4;
-    height: 100vh;
+    height: 97vh;
+    width: 97vw;
+    margin: 0;
 }
 
 #root {
-    width: 100vw;
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    .cim {
+        font-family: 'EB Garamond', serif;
+        font-weight: normal;
+        font-size: 48px;
+        color: #467745;
+    }
+
+    .targy {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        width: 480px;
+        height: 64px;
+        border: none;
+        color: #467745;
+    }
+
+    .megjegyzes {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        width: 480px;
+        height: 120px;
+        border: none;
+        color: #467745;
+    }
+
+    .check{
+        display: flex;
+        flex-direction: row;
+        .check-box{
+            background-color: white;
+            border: none;
+        }
+        .checkbox-text{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #467745;
+        }
+    }
+
+    .save-button {
+        font-family: 'EB Garamond', serif;
+        font-weight: normal;
+        font-size: 21px;
+        width: 280px;
+        height: 80px;
+        background-color: #467745;
+        color: #f7e4d4;
+        letter-spacing: 0.2em;
+    }
+
 }
 
+@media all and (max-width: 519px) {
+    .cim {
+        font-size: 36px;
+        align-self: flex-start;
+    }
+}

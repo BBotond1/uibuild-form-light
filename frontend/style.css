@@ -82,8 +82,8 @@ body {
   flex-direction: row;
 }
 #root .check .check-box {
-  height: 17px;
-  width: 17px;
+  height: 18px;
+  width: 18px;
 }
 #root .check .checkbox-text {
   font-family: "Montserrat", sans-serif;
@@ -127,7 +127,8 @@ body {
     margin-right: 20px;
   }
   #root .check {
-    margin-left: 20px;
+    margin-left: 23px;
+    align-self: flex-start;
   }
   #root .check .checkbox-text p {
     display: block;
